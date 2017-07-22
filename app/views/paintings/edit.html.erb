@@ -1,0 +1,15 @@
+<h1>update painting</h1>
+
+<%= form_for ([@gallery, @painting]), :html => {:multipart => true} do |s| %>
+
+  <%= s.label :p_name %>
+  <%= s.text_field :p_name %>
+  <br><br>
+
+  <%= s.file_field :image %><br><br>
+
+  <%= s.label :remote_image_url, "or image URl" %>
+  <%= s.text_field :remote_image_url %><br><br> 
+
+  <%= s.submit 'update' %>
+ <% end %>

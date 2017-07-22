@@ -1,0 +1,8 @@
+<h1>Create paintings</h1>
+
+<%= form_for ([@gallery, @painting]) do |s| %>
+  <%= s.label :p_name %>
+  <%= s.text_field :p_name %>
+  <br><br>
+  <%= s.submit 'create' %>
+ <% end %>
